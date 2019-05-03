@@ -1,0 +1,71 @@
+.about-1
+	padding: 60px 0
+	@media (max-width: 991.98px)
+		padding: 40px 0
+	.main-title
+		font-size: 35px
+		font-weight: 400
+		color: #333333
+		text-transform: uppercase
+		position: relative
+		&:before
+			position: absolute
+			bottom: -16px
+			width: 80px
+			height: 2px
+			background-image: linear-gradient( 90deg, rgb(139,197,60) 0%, rgb(8,117,187) 100%)
+			content: ''
+	.textbox
+		font-size: 15px
+		color: #333333
+		display: flex
+		flex-wrap: wrap
+		@media (max-width: 991.98px)
+			text-align: justify
+	h3
+		font-size: 18px
+		font-weight: 300
+		color: #999999
+		margin-bottom: 16px
+	.btn-viewmore
+		// color: map-get($mau, main)
+		display: inline-block
+		margin-top: 30px
+		margin-left: auto
+		border-bottom: 1px solid transparent
+		&:hover
+			// border-bottom: 1px solid map-get($mau, main)
+			text-decoration: none
+		.lnr
+			margin-left: 10px
+	.top
+		.title
+			@media (max-width: 1024px)
+				margin-bottom: 20px
+				img
+					max-height: 70px
+	.bottom
+		margin-top: 50px
+		@media (max-width: 1024px)
+			margin-top: 20px
+	.item
+		color: white
+		@media (max-width: 1024px)
+			margin-bottom: 30px
+		.title
+			display: flex
+			align-items: center
+			margin-bottom: 20px
+			font-size: 16px
+			font-weight: 600
+			h4
+				font-size: inherit
+				font-weight: inherit
+			.img
+				flex: 0 0 70px
+				max-width: 70px
+		.content
+			font-size: 14px
+			p
+				font-size: inherit
+				font-weight: inherit
