@@ -12,6 +12,14 @@
 		justify-content: center
 		flex-direction: column
 		.img 
+			position: relative
+			&:before 
+				position: absolute
+				content: ""
+				width: 10%
+				height: 100%
+				background: linear-gradient(90deg, #e6eae9, #ff000000)
+				left: 0
 			img 
 				width: 100%
 		.full-conten 
@@ -22,6 +30,14 @@
 				line-height: 55px
 				color: #0875bb
 				font-weight: 600
+				position: relative
+				&:before 
+					position: absolute
+					content: ''
+					background-image: linear-gradient( 0deg, rgb(139,197,60) 0%, rgb(8,117,187) 100%)
+					width: 80px
+					height: 2px
+					bottom: 0
 			h3 
 				font-size: 20px 
 				line-height: 55px
@@ -56,6 +72,11 @@
 					background: #0875bb
 					color: #ffffff
 					font-weight: 600
+	@media (max-width: 992px)
+		.Construction-item 
+			.img 
+				&:before 
+					display: none
 	@media (max-width: 767.98px)
 		padding-top: 15px
 		h2 

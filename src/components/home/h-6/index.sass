@@ -60,6 +60,8 @@
 					flex-direction: row
 				margin-top: 30px
 		.projects-bottom 
+			max-height: 255px 
+			overflow: hidden
 			display: flex
 			align-items: center
 			background: #ffffff
@@ -70,6 +72,7 @@
 			.img
 				overflow: hidden
 				img
+					width: 100%
 					+tran(1s)
 			.content
 				padding: 30px
@@ -104,6 +107,9 @@
 			.projects
 				.content 
 					padding: 10px
+			.projects-bottom 
+				max-height: 212px 
+				overflow: hidden
 	@media (max-width: 991.98px)
 		.projects-item
 			.projects-main

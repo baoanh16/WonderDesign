@@ -12,12 +12,13 @@
 					display: none
 			.below
 				position: relative
+				padding: 0 20px
 				i 
 					font-size: 30px
 					color: #c5c5c5
 				.thumbnail
 					margin: 0 auto
-					max-width: 420px
+					// max-width: 420px
 					.swiper-slide
 						padding: 0 5px
 						cursor: pointer
@@ -30,19 +31,11 @@
 				.slide-navigation
 					position: absolute
 					top: 50%
+					left: 0
 					width: 100%
 					display: flex
 					justify-content: space-between
 					transform: translateY(-50%)
-				@media (max-width: 1199.98px)
-					.thumbnail
-						max-width: 400px
-				@media (max-width: 575.98px)
-					.thumbnail
-						max-width: 360px
-				@media (max-width: 400.98px)
-					.thumbnail
-						max-width: 215px
 		.product-info 
 			h2 
 				font-size: 30px
@@ -56,6 +49,7 @@
 				color: #999999
 				a 
 					color: #8dc444
+					text-decoration: underline !important
 			h4 
 				font-size: 25px
 				color: #be0707
