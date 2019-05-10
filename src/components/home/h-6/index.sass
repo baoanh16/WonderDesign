@@ -6,147 +6,156 @@
 		font-weight: 400
 		color: #333333
 		text-transform: uppercase
+		@media (max-width: 991.98px)
+			font-size: 30px
+		@media (max-width: 575.98px)
+			font-size: 25px
 	img 
 		width: 100%
-	.projects-item
+	.container
+		position: relative
+		.swiper-nav
+			position: absolute
+			top: 0px
+			right: 15px
+			display: flex
+			.swiper-prev, .swiper-next
+				font-size: 40px
+				color: #999999
+				&:active, &:hover, &:focus
+					color: #0875bb
+					outline: none
+.projects-item
+	.projects
+		transition: .5s all ease-in-out
+		display: block
+		position: relative
+		overflow: hidden
+		img
+			+tran(.5s)
+		.content 
+			padding: 15px 20px
+			background-image: linear-gradient( 25deg, rgb(8,117,187) 0%, rgb(142,196,67) 100%)
+			p 
+				font-size: 14px
+				color: #ffffff
+				font-weight: 300
+			h3 
+				font-size: 18px
+				font-weight: 600
+				color: #ffffff
+				margin-bottom: 12px
+			h4 
+				transition: .5s all ease-in-out
+				font-weight: 300
+				font-size: 15px
+				line-height: 22px
+				color: rgba(255,255,255,.6)
+				i
+					margin-left: 14px
+	@media (min-width: 992px)
 		.projects
-			transition: .5s all ease-in-out
-			display: block
-			position: relative
-			overflow: hidden
-			img
-				+tran(.5s)
 			.content 
-				padding: 30px
-				position: absolute
-				bottom: 0
-				width: 50%
-				left: 0
-				height: 50%
-				background-image: linear-gradient( 25deg, rgb(8,117,187) 0%, rgb(142,196,67) 100%)
-				opacity: 0.902
-				z-index: 57
-				+tran(1s)
-				p 
-					font-size: 15px
-					line-height: 35px
-					color: #ffffff
+				p
+					font-size: 14px
 					font-weight: 300
-				h3 
-					font-size: 25px
-					line-height: 35px
-					font-weight: 600
-					color: #ffffff
-				h4 
-					transition: .5s all ease-in-out
-					margin-top: 40px
+					color: #e5e5e5
+				h3
+					font-size: 21px
+					font-weight: 700
+					color: #333333
+				h4
+					font-size: 14px
 					font-weight: 300
-					font-size: 15px
-					line-height: 22px
-					color: #999999
+					color: #b4b4b4
+					align-self: flex-end
+					margin-bottom: 20px
 			&:hover
 				+box-shadow()
 				img
 					transform: scale(1.2)
 					+tran(1s)
-				.content 
-					h4 
-						color: #ffffff
-		.projects-main
-			a
-				flex-direction: row-reverse
-			&:nth-child(2)
-				.projects-bottom 
-					flex-direction: row
-				margin-top: 30px
-		.projects-bottom 
-			max-height: 255px 
-			overflow: hidden
-			display: flex
-			align-items: center
-			background: #ffffff
-			transition: .5s all ease-in-out
-			.img,.content 
-				flex: 0 0 50%
-				width: 50%
-			.img
-				overflow: hidden
-				img
-					width: 100%
-					+tran(1s)
-			.content
-				padding: 30px
-				p 
-					font-size: 15px
-					line-height: 35px
-					color: #999999
-				h3 
-					font-size: 25px
-					line-height: 35px
-					color: #333333
-				h4 
-					padding-top: 40px
-					font-weight: 300
-					font-size: 15px
-					line-height: 22px
-					color: #0875bb
-			&:hover 
-				+box-shadow()
-				img
-					transform: scale(1.2)
-					+tran(1s)
-				h4
-					font-weight: bold
-					
-	@media (max-width: 1199.98px)
-		.projects-item
-			.projects-main
-				.content 
-					h3 
-						font-size: 22px
+				// .content 
+				// 	h4 
+				// 		color: #ffffff
+		&:nth-child(1)
+			float: left
+			max-width: 50%
+			padding: 0 15px
 			.projects
-				.content 
-					padding: 10px
-			.projects-bottom 
-				max-height: 212px 
-				overflow: hidden
-	@media (max-width: 991.98px)
-		.projects-item
-			.projects-main
-				margin-top: 30px
-			.projects
-				.content 
-					position: relative
-					width: 100%
-					
-					h4 
-						margin-top: 0
-	@media (max-width: 767.98px)
-		h2 
-			font-size: 30px
-		.projects-item
-			.projects
-				.content 
-					h3 
-						font-size: 20px
-			.projects-bottom
+				.img
+					overflow: hidden
+					height: 450px
 				.content
-					h3 
-						font-size: 20px
-	@media (max-width: 575.98px)
-		h2 
-			font-size: 25px
-		.projects-item
-			.projects-main
-				+ .projects-main
-					margin-top: 15px
-				margin-top: 15px
-			.projects-bottom 
-				display: block
-				.img,.content 
-					flex: 0 0 100%
-					width: 100%
-				.content 
-					padding: 10px
-					h4 
-						padding-top: 0
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 210px
+					height: 210px
+					display: flex
+					flex-wrap: wrap
+					opacity: .9
+					p
+						color: #e5e5e5
+					h3
+						color: white
+			&:hover
+				.projects
+					.content
+						h4
+							color: white
+		&:nth-child(2),&:nth-child(3)
+			float: left
+			max-width: 50%
+			padding: 0 15px
+			.projects
+				display: flex
+				.img
+					overflow: hidden
+					height: 210px
+					flex: 0 0 50%
+				.content
+					position: relative
+					padding: 15px 20px
+					display: flex
+					flex-wrap: wrap
+					align-items: flex-start
+					background: white
+					p
+						color: #999999
+					h3
+						color: #333333
+					h4
+						color: #0875bb
+		&:nth-child(3)
+			margin-top: 30px
+			.projects
+				flex-direction: row-reverse
+	@media (min-width: 1200px)
+		.projects
+			.content 
+				p
+					font-size: 15px
+				h3
+					font-size: 25px
+				h4
+					font-size: 15px
+					margin-bottom: 30px
+		&:nth-child(1)
+			.projects
+				.img
+					height: 540px
+				.content
+					width: 250px
+					height: 250px
+		&:nth-child(2),&:nth-child(3)
+			.projects
+				.img
+					height: 255px
+				.content
+					h4
+						margin-bottom: 30px
+
+.projects-list-wrapper
+	@media (min-width: 992px)
+		margin: 0 -15px

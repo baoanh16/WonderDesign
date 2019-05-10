@@ -41,20 +41,32 @@
 							img 
 								height: 467px
 							.banner-title 
+								background: #0875ba
+								padding: 15px 50px 55px 50px
+								bottom: 0
 								h1 
-									font-size: 30px 
+									font-size: 24px
+									font-weight: 700 
+									text-transform: uppercase
 								p 
-									font-size: 15px
+									font-size: 16px
+									font-weight: 300
+									text-transform: none
 		.swiper-pagination
 			bottom: 35px
+			@media (max-width: 575.9px)
+				bottom: 25px
 			.swiper-pagination-bullet
 				background: none
-				box-shadow: 0 0 0 1px #fff inset
+				border: 1px solid white
 				width: 15px
 				height: 15px
-				@media (max-width: 767.98px)
-					width: 10px
-					height: 10px
+				opacity: 1
 				&.swiper-pagination-bullet-active
 					background: #ffffff
-
+				@media (max-width: 767.98px)
+					width: 12px
+					height: 12px
+					&.swiper-pagination-bullet-active
+						background: #8dc444
+						border: 1px solid #8dc444

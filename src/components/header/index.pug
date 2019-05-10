@@ -1,50 +1,46 @@
 header
-	section.top-header
-		.top-header-wrapper
-			.container
-				.top-header-menu
-					ul.contact-info
-						li
-							a(href="tel:65 6240 6830") +65 6240 6830
-							a.contact(href="tel:65 6240 6830")
-								i.mdi-phone
-						li
-							a(href="mailto:support@singwonder.com") support@singwonder.com
-							a.contact(href="mailto:support@singwonder.com")
-								i.mdi-email
-						li
-							a(href="javascript:void(0)") Customer Service
-							a.contact(href="javascript:void(0)")
-								i.mdi-account-supervisor-circle
-					.language
-						.box-img
-							img(src="./img/flag.png", alt="flag")
-						select
-							option.en English
-							option.vn Vietnamese
-	section.main-header
+	.top-header
 		.container
-			.main-header-wrapper
+			.row.no-gutters
+				.hotline
+					a(href="tel:65 6240 6830") 
+						span.mdi.mdi-phone
+						span +65 6240 6830
+				.mail
+					a(href="mailto:support@singwonder.com") 
+						span.mdi.mdi-email
+						span support@singwonder.com
+				.customer-service
+					a(href="#") Customer Service
+				.language
+					.box-img
+						img(src="./img/flag.png", alt="flag")
+					select
+						option.en English
+						option.vn Vietnamese
+	.bottom-header
+		.container
+			.row.no-gutters
 				.logo-wrapper
 					a(href="index.html")
 						img(src="./img/logo.png", alt="logo")
-				.main-header-menu
-					ul.menu-parent
+				.main-nav
+					ul
 						li
 							a(href="about.html") About Us
-						li
+						li.active
 							a(href="service.html") Service
-						li
+						li.has-sub
 							a(href="product.html") Product
 							ul.menu-sub
 								li
-									a(href="javascript:void(0)") Lights
+									a(href="#") Lights
 								li
-									a(href="javascript:void(0)") Electrical
+									a(href="#") Electrical
 								li
-									a(href="javascript:void(0)") Wooden Furniture
+									a(href="#") Wooden Furniture
 								li
-									a(href="javascript:void(0)") Decor
+									a(href="#") Decor
 						li
 							a(href="promotion.html") Promotion
 						li
@@ -57,16 +53,22 @@ header
 							a(href="career.html") Career
 						li
 							a(href="contact.html") Contact Us
-					.search-wrapper
-						i.mdi.mdi-magnify
-						.search-box
-							input(type="text", placeholder="Tìm kiếm thông tin")
-							button
-								span.mdi.mdi-magnify
+				.search
+					span.mdi.mdi-magnify
+					.search-box
+						input(type="text", placeholder="Tìm kiếm thông tin")
+						button
+							span.mdi.mdi-magnify
+				.toggle-menu
+					span
+					span
+					span
 	.backdrop
-	.container
-		.mobile-header
-			.toggle-menu
-				span
-				span
-				span
+	.mobile-header
+		.logo-mobile
+			a(href="/")
+				img(src="./img/logo.png", alt="")
+		.hotline-mobile
+			a(href="tel:65 6240 6830") 
+				span.mdi.mdi-phone
+				span +65 6240 6830

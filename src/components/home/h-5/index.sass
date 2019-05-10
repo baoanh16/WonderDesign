@@ -1,5 +1,7 @@
 .wd-products
 	padding: 70px 0
+	@media (max-width: 991.98px)
+		padding: 30px 0
 	h2 
 		font-size: 35px
 		line-height: 55px
@@ -8,14 +10,17 @@
 		text-transform: uppercase
 	.products-item 
 		text-align: center
-		padding-top: 30px
+		margin-top: 30px
 		.products 
+			box-shadow: 0 0 3px rgba(0,0,0,.1)
 			border-radius: 5px
 			display: block
 			padding: 30px 0
 			background: #ffffff
 			.img 
-				padding-bottom: 10px
+				img
+					@media (max-width: 991.98px)
+						max-width: 90px
 			p 
 				position: relative
 				font-size: 18px
@@ -35,12 +40,20 @@
 						height: 1px
 						left: 50%
 						transform: translateX(-50%)
-	@media (max-width: 767.98px)
-		padding: 30px 0
+	@media (max-width: 991.98px)
+		.products-item
+			.products
+				padding: 7px 0
 		h2 
 			font-size: 30px
-		.products-item
-			padding-top: 15px
 	@media (max-width: 575.98px)
 		h2 
 			font-size: 25px
+		.row
+			margin: 0
+			justify-content: space-between
+		.products-item
+			margin-top: 15px
+			padding: 0
+			flex: 0 0 calc(50% - 7.5px)
+			max-width: calc(50% - 7.5px)

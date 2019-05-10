@@ -1,4 +1,14 @@
 .wd-donors
+	h2 
+		font-size: 35px
+		line-height: 55px
+		font-weight: 400
+		color: #333333
+		text-transform: uppercase
+		@media (max-width: 991.98px)
+			font-size: 30px
+		@media (max-width: 575.98px)
+			font-size: 25px
 	.container 
 		position: relative
 		padding-top: 70px 
@@ -15,7 +25,7 @@
 			transform: translate(-50%, -50%)
 			left: 50%
 			.swiper-prev, .swiper-next
-				width: 25px
+				width: 35px
 				height: 25px
 				line-height: 25px
 				display: flex
@@ -28,7 +38,12 @@
 				&:focus 
 					outline: none
 			i 
-				font-size: 28px
+				font-size: 42px
+				display: flex
+				width: 100%
+				height: 100%
+				align-items: center
+				justify-content: center
 		img
 			max-height: 80px
 	@media (max-width: 767.98px)
