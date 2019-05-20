@@ -108,6 +108,13 @@
 		border-radius: 99px
 		overflow: hidden
 		border: 1px solid #E1E1E1
+		position: relative
+		.flag
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: 15px
+			width: 15px
 		select,
 		input
 			border: 1px solid #E1E1E1
@@ -118,12 +125,11 @@
 		select
 			flex: 0 0 100px
 			padding-right: 0
+			padding-left: 40px
 			background: #e1e1e1
 			font-weight: 700
 			@media (max-width: 992px)
 				flex: 0 0 90px
+				padding-left: 30px
 			@media (max-width: 768px)
 				flex: 0 0 80px
-			@media (max-width: 576px)
->>>>>>> affb69d15ad698791731f201ae44b734fa03a564
-				flex: 0 0 70px
