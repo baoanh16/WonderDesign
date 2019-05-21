@@ -205,6 +205,10 @@ $(document).ready(function () {
 		$('.wd-projects .projects-list-wrapper').removeClass('swiper-wrapper')
 		$('.wd-projects .projects-item').removeClass('swiper-slide')
 	}
+	
+	$('.form-wrapper .apply').on('click', function(){
+		$('.form-wrapper').siblings('.form-apply').slideToggle(500)
+	})
 });
 
 
